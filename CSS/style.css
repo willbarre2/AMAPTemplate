@@ -179,8 +179,7 @@ label {
  
 /* background formulaire */
 aside{
-    background: url(../assets/IMG/lejumes.png);
-    background-size: cover;
+    background-color: blanchedalmond;
     font-size: 1.5rem;
  
 }
