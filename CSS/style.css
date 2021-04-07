@@ -1,0 +1,229 @@
+
+@font-face {
+    font-family: "Roboto ";
+    src: url("../assets/Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("../assets/Fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+}
+
+body{
+    font-family: "Roboto", sans-serif ;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* header */
+
+header {
+    background: url(../assets/IMG/panierleg.jpg) fixed no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: top;
+}
+
+header h1 {
+    font-size: 5rem;
+    padding: 9rem;
+}
+
+.opacity {
+    opacity: 0.6;
+    font-size: 3rem;
+    color: white;
+    transform: rotate(-90deg);
+    left: 70%;
+    top: 35%;
+    position: absolute;
+}
+
+
+
+@media (max-width: 1200px) {
+    header h1{
+        font-size: 4rem;
+        padding: 4rem;
+    }
+    
+}
+
+@media (max-width: 992px){
+    header h1{
+        font-size: 3rem;
+        padding: 3rem;
+    }
+
+    .opacity{
+        font-size: 2rem;
+        top: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    header h1{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+    .opacity{
+        left: 58%;
+    }
+}
+
+/* main */
+
+#who{
+    background: url(../assets/IMG/champs.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Section accodéon */
+
+.menuItemsD{
+    list-style: none;
+    font-size: 2rem;
+    color: white !important;
+}
+
+.menuItemsD:hover{
+    color: darkturquoise !important;
+    cursor: pointer;
+}
+
+.aMenu{
+    margin: 6rem 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.aMenu:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+#sousMCont{
+    z-index: 10;
+}
+
+.sousMenu{
+    position: absolute;
+    transform: translatex(100%);
+    transition: all 1s ease-in-out;
+}
+
+.sousMenu.isOpen{
+    transform: translateX(0);
+}
+
+
+.content{
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.menuTitles{
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+}
+
+.menuTitles:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.menuItems{
+    margin: 0;
+    padding: 1rem;
+    background-color: cornsilk;
+    width: 100%;
+    display: none;
+}
+
+.menuItems:hover{
+    cursor: pointer;
+    color: white !important;
+    background-color: orange !important;
+}
+
+.mySlides {
+    display: none;
+}
+
+#sliderCont{
+    overflow: hidden;
+}
+
+form.formulaire {
+    display: table;
+}
+ 
+div.formulaire {
+    display: table-row;
+}
+ 
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+ 
+label {
+    padding-right: 10px;
+}
+ 
+/* background formulaire */
+aside{
+    background: url(../assets/IMG/lejumes.png);
+    background-size: cover;
+    font-size: 1.5rem;
+ 
+}
+ 
+.imgformulaire{
+    padding: 0.5rem;
+}
+
+
+/* footer */
+
+
+footer{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: url(../assets/IMG/verge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map{
+    width: 20vw;
+    height: 20vw;
+    border: none;
+}
+
+@media (max-width: 1200px) {
+    #map{
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #map{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #map{
+        width: 80vw;
+        height: 80vw;
+    }
+}
